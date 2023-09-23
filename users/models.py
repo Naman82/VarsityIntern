@@ -24,13 +24,6 @@ class User(AbstractUser):
     def __str__(self):
         return "{}".format(self.email)
 
-    # def gettype(self):
-    #     return self.user_type
-
-    # @property
-    # def type_value(self):
-    #     return dict(self.USER_TYPE_CHOICES)[self.user_type]
-
 class UserProfile(models.Model):
     def get_update_filename(self, filename):
         ext = filename.split('.')[-1]
@@ -43,4 +36,4 @@ class UserProfile(models.Model):
     profile_pic = models.ImageField(upload_to=get_update_filename, default='uploads/user/profile/default_profile.jpg')
 
     def __str__(self):
-        return self.name
+        return "{},{}".format(str(self.name),str(self.user))

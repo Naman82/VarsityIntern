@@ -115,8 +115,8 @@ SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = os.getenv('SOCIAL_AUTH_GOOGLE_OAUTH2_KEY')
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = os.getenv('SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET')
 
 
-VARSITYBLOG_APP_CLIENT_ID = os.getenv('VARSITYBLOG_APP_CLIENT_ID')
-VARSITYBLOG_APP_CLIENT_SECRET = os.getenv('VARSITYBLOG_APP_CLIENT_SECRET')
+# VARSITYBLOG_APP_CLIENT_ID = os.getenv('VARSITYBLOG_APP_CLIENT_ID')
+# VARSITYBLOG_APP_CLIENT_SECRET = os.getenv('VARSITYBLOG_APP_CLIENT_SECRET')
 
 
 SOCIAL_AUTH_GOOGLE_OAUTH2_SCOPE = [
@@ -146,8 +146,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        #'oauth2_provider.contrib.rest_framework.OAuth2Authentication',  # django-oauth-toolkit >= 1.0.0
-        #'drf_social_oauth2.authentication.SocialAuthentication',
+        'oauth2_provider.contrib.rest_framework.OAuth2Authentication',  # django-oauth-toolkit >= 1.0.0
+        'drf_social_oauth2.authentication.SocialAuthentication',
     ),
 }
 
