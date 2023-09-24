@@ -55,10 +55,11 @@ python manage.py runserver
 ```bash
 python manage.py createsuperuser
 ```
+```bash
 email: admin@mail.com
 user-type: 0 
 password: abcd
-
+```
 user-type should be 0 for admin permissions.
 
 7. Create client_id and client_secret, open your browser and go to `http://localhost:8000/admin`, using the above created credentials login into the admin panel.
