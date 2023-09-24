@@ -7,7 +7,7 @@ A backend application which consists of different APIs including User-Authentica
 
 `https://varsitypro-blog-naman.onrender.com/docs/`
 
-###credentials
+### credentials
 ```bash
 {
   "client_id": "37uBM0ge6W93vOIDunvvAjTg9DH9OqVyqDAj5A5C",
